@@ -23,7 +23,7 @@ export class news extends Component {
       page: 1,
       totalResults: 0,
     };
-    document.title = `NewsMonkey | ${this.props.category}`;
+    document.title = `Samachaar | ${this.props.category}`;
   }
 
   async updateNews() {
@@ -70,7 +70,7 @@ export class news extends Component {
     return (
       <>
         <h1 className="text-center " style={{margin: '5rem'}}>
-          NewsNow - Top {this.props.category} headlines
+          Samachaar - Top {this.props.category} headlines
         </h1>
         {this.state.loading && <Spinner />}
         <InfiniteScroll
